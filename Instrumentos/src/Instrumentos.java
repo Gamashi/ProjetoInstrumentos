@@ -2,12 +2,11 @@ public class Instrumentos {
 
     private String Proprietario;
     //private Tipologia tipo;
-    private int numeração;
+   // private int numeração;
     private boolean verificado;
 
     public boolean Verifica(String palavra){
-        if(palavra == "Instrumento"){
-            
+        if (palavra == "Instrumento"){
             return true;
         }
             return false;
@@ -37,3 +36,4 @@ public class Instrumentos {
     }
 }
 
+ 
