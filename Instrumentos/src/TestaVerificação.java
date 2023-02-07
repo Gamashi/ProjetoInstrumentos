@@ -1,14 +1,12 @@
 public class TestaVerificação {
 
     public static void main(String[] args) {
-        
 
-        Instrumentos trompete = new Instrumentos();
+        Instrumento trompete = new Instrumento();
+        trompete.setPalavra("instrumento");
 
-        trompete.Autentica("Instrumento");
-
-
+        SistemaInterno si = new SistemaInterno();
+        si.Autentica(trompete);
 
     }
-    
 }
