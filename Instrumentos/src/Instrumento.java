@@ -1,28 +1,35 @@
-public class Instrumento {
+public abstract class Instrumento {
 
-    private String Proprietario;
-    private String palavra;
-    //private Tipologia tipo;
-    // private int numeração;
+    private String proprietario;
+    private double preço;
+    private String tipologia;
 
-    public boolean Verifica(String palavra){
-        if (this.palavra == palavra){
-            return true;
-        }
-            return false;
-}
+    public Instrumento(String proprietario, String tipologia){
+        this.proprietario = proprietario;
+        this.tipologia = tipologia;
 
-    public void setProprietario(String Proprietario ) {
-        this.Proprietario = Proprietario;
+    }
+
+    public double getPreço() {
+        return preço;
+    }
+
+    public void setPreço(double preço) {
+        this.preço = preço;
+    }
+    public void setProprietario(String proprietario ) {
+        this.proprietario = proprietario;
     }      
     
     public String getProprietario() {
-        return Proprietario;
+        return proprietario;
     }
 
-    public void setPalavra(String palavra) {
-        this.palavra = palavra;
+    public String getTipologia() {
+        return tipologia;
     }
+
+
 }
 
  

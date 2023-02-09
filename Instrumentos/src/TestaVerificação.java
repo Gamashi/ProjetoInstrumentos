@@ -2,11 +2,13 @@ public class TestaVerificação {
 
     public static void main(String[] args) {
 
-        Instrumento trompete = new Instrumento();
-        trompete.setPalavra("instrumento");
+        Trompete trompete = new Trompete("sopro", "Gustavo");
+        trompete.setNumeracao(5252);
 
         SistemaInterno si = new SistemaInterno();
-        si.Autentica(trompete);
+        si.auntentica(trompete);
+
+
 
     }
 }

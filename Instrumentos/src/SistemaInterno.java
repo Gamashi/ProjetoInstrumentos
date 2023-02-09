@@ -1,15 +1,20 @@
 public class SistemaInterno {
 
-    private String palavra = "instrumento";
+    public int numeracao =  5252;
 
-    public void Autentica(Instrumento instrumento){
+    public void auntentica(Verificáveis ve){
 
-        boolean autenticou = instrumento.Verifica(this.palavra);
-            if(autenticou){
-                System.out.println("ok!");
+        boolean autenticou = ve.autentica(this.numeracao);
+            if (autenticou){
+
+                System.out.println("É um instrumento");
             }else{
-                System.out.println("Não podemos prosseguir");
+
+                System.out.println("Não é um instrumento");
+
             }
-        }
-    }
+                
+    }   
+
+}
 
