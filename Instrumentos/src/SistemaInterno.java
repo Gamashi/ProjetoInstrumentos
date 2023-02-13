@@ -11,10 +11,7 @@ public class SistemaInterno {
             }else{
 
                 System.out.println("Não é um instrumento");
-
-            }
-                
+            }           
     }   
-
 }
 
